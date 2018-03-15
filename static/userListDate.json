@@ -1,0 +1,41 @@
+
+  {
+  {deptId: "1", deptName: "Java开发", salesUserList: [{userId: "20170728143906766481", userName: "胡梦霞"}]}
+  deptId
+  :
+  "1"
+  deptName
+  :
+  "Java开发"
+  salesUserList
+  :
+  [{userId: "20170728143906766481", userName: "胡梦霞"}]
+  0
+  :
+  {userId: "20170728143906766481", userName: "胡梦霞"}
+  userId
+  :
+  "20170728143906766481"
+  userName
+  :
+  "胡梦霞"
+  1
+  :
+  {deptId: "2", deptName: "前端",…}
+  deptId
+  :
+  "2"
+  deptName
+  :
+  "前端"
+  salesUserList
+  :
+  [{userId: "20170728143906766481", userName: "胡梦霞"}, {userId: "32", userName: "快乐生活"}]
+  0
+  :
+  {userId: "20170728143906766481", userName: "胡梦霞"}
+  1
+  :
+  {userId: "32", userName: "快乐生活"}
+  }
+

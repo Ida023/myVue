@@ -1,0 +1,236 @@
+{
+  "TableList": [
+    {
+      "Sku": "9527",
+      "ImgUrl": "static/qifengle.jpg",
+      "Grouping": [
+        {
+          "Id": "D201707070001A",
+          "demand": "10",
+          "Day": "7",
+          "transport": "02",
+          "objective": "03",
+          "Stock1": "1",
+          "Stock2": "2",
+          "Stock3": "3",
+          "Stock4": "4",
+          "Stock5": "5",
+          "SalesData1": "销售1",
+          "SalesData2": "销售2",
+          "SalesData3": "销售3",
+          "weights": "12.34",
+          "volume": "9527.2333",
+          "ArrivalRecord": [
+            {
+              "data1": "CG201703010001",
+              "data2": "1"
+            },
+            {
+              "data1": "CG201703010001",
+              "data2": "2"
+            },
+            {
+              "data1": "CG201703010001",
+              "data2": "1"
+            },
+            {
+              "data1": "CG201703010001",
+              "data2": "1"
+            },
+            {
+              "data1": "CG201703010001",
+              "data2": "1"
+            },
+            {
+              "data1": "CG201703010001",
+              "data2": "1"
+            }
+          ],
+          "State": "草稿"
+        },
+        {
+          "Id": "D201707070001B",
+          "demand": "10",
+          "Day": "7",
+          "transport": "灰机",
+          "objective": "伊拉克仓",
+          "Stock1": "1",
+          "Stock2": "2",
+          "Stock3": "3",
+          "Stock4": "4",
+          "Stock5": "5",
+          "SalesData1": "销售1",
+          "SalesData2": "销售2",
+          "SalesData3": "销售3",
+          "weights": "12.34",
+          "volume": "9527.2333",
+          "ArrivalRecord": [
+            {
+              "data1": "CG201703010001",
+              "data2": "1"
+            },
+            {
+              "data1": "CG201703010001",
+              "data2": "2"
+            }
+          ],
+          "State": "草稿"
+        },
+        {
+          "Id": "D201707070001C",
+          "demand": "10",
+          "Day": "7",
+          "transport": "02",
+          "objective": "伊拉克仓",
+          "Stock1": "1",
+          "Stock2": "2",
+          "Stock3": "3",
+          "Stock4": "4",
+          "Stock5": "5",
+          "SalesData1": "销售1",
+          "SalesData2": "销售2",
+          "SalesData3": "销售3",
+          "weights": "12.34",
+          "volume": "9527.2333",
+          "ArrivalRecord": [
+            {
+              "data1": "CG201703010001",
+              "data2": "1"
+            },
+            {
+              "data1": "CG201703010001",
+              "data2": "2"
+            }
+          ],
+          "State": "草稿2"
+        }
+      ]
+    },
+    {
+      "Sku": "9528",
+      "ImgUrl": "static/qifengle.jpg",
+      "Grouping": [
+        {
+          "Id": "D201707070001A",
+          "demand": "10",
+          "Day": "7",
+          "transport": "灰机",
+          "objective": "伊拉克仓",
+          "Stock1": "1",
+          "Stock2": "2",
+          "Stock3": "3",
+          "Stock4": "4",
+          "Stock5": "5",
+          "SalesData1": "销售1",
+          "SalesData2": "销售2",
+          "SalesData3": "销售3",
+          "weights": "12.34",
+          "volume": "9527.2333",
+          "ArrivalRecord": [
+            {
+              "data1": "CG201703010001",
+              "data2": "1"
+            },
+            {
+              "data1": "CG201703010001",
+              "data2": "2"
+            }
+          ],
+          "State": "草稿4"
+        },
+        {
+          "Id": "D201707070001A",
+          "demand": "10",
+          "Day": "7",
+          "transport": "灰机",
+          "objective": "伊拉克仓",
+          "Stock1": "1",
+          "Stock2": "2",
+          "Stock3": "3",
+          "Stock4": "4",
+          "Stock5": "5",
+          "SalesData1": "销售1",
+          "SalesData2": "销售2",
+          "SalesData3": "销售3",
+          "weights": "12.34",
+          "volume": "9527.2333",
+          "ArrivalRecord": [
+            {
+              "data1": "CG201703010001",
+              "data2": "1"
+            },
+            {
+              "data1": "CG201703010001",
+              "data2": "2"
+            }
+          ],
+          "State": "草稿223"
+        }
+      ]
+    },
+    {
+      "Sku": "9528",
+      "ImgUrl": "static/qifengle.jpg",
+      "Grouping": [
+        {
+          "Id": "D201707070001A",
+          "demand": "10",
+          "Day": "7",
+          "transport": "灰机",
+          "objective": "伊拉克仓",
+          "Stock1": "1",
+          "Stock2": "2",
+          "Stock3": "3",
+          "Stock4": "4",
+          "Stock5": "5",
+          "SalesData1": "销售1",
+          "SalesData2": "销售2",
+          "SalesData3": "销售3",
+          "weights": "12.34",
+          "volume": "9527.2333",
+          "ArrivalRecord": [
+            {
+              "data1": "CG201703010001",
+              "data2": "1"
+            },
+            {
+              "data1": "CG201703010001",
+              "data2": "2"
+            }
+          ],
+          "State": "草稿4"
+        },
+        {
+          "Id": "D201707070001A",
+          "demand": "10",
+          "Day": "7",
+          "transport": "灰机",
+          "objective": "伊拉克仓",
+          "Stock1": "1",
+          "Stock2": "2",
+          "Stock3": "3",
+          "Stock4": "4",
+          "Stock5": "5",
+          "SalesData1": "销售1",
+          "SalesData2": "销售2",
+          "SalesData3": "销售3",
+          "weights": "12.34",
+          "volume": "9527.2333",
+          "ArrivalRecord": [
+            {
+              "data1": "CG201703010001",
+              "data2": "1"
+            },
+            {
+              "data1": "CG201703010001",
+              "data2": "2"
+            }
+          ],
+          "State": "草稿223"
+        }
+      ]
+    }
+
+
+  ]
+}

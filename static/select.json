@@ -1,0 +1,16 @@
+{
+  "select":[
+    {
+      "shabiName":"下拉1",
+      "shabiId":"01"
+    },
+    {
+      "shabiName":"下拉2",
+      "shabiId":"02"
+    },
+    {
+      "shabiName":"下拉3",
+      "shabiId":"03"
+    }
+  ]
+}

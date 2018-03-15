@@ -1,0 +1,2091 @@
+[
+  {
+    "id": "8d4f0299-70c4-40cb-99f9-6e52a67c3c50",
+    "parentId": null,
+    "key": null,
+    "name": "中信建投基金管理有限公司",
+    "content": null,
+    "subject": {
+      "name": "company",
+      "label": "基金公司",
+      "description": "公司",
+      "singleton": false,
+      "type": "System",
+      "createdOn": "2018-01-11T14:19:03.5500677",
+      "updatedOn": "2018-03-09T11:32:01.6529459",
+      "createdBy": {
+        "userName": "admin",
+        "firstName": null,
+        "lastName": null,
+        "displayName": null,
+        "email": "admin@pwc.cn",
+        "roles": [],
+        "accesses": [],
+        "parent": null
+      },
+      "updatedBy": {
+        "userName": "admin",
+        "firstName": null,
+        "lastName": null,
+        "displayName": null,
+        "email": "admin@pwc.cn",
+        "roles": [],
+        "accesses": [],
+        "parent": null
+      },
+      "settings": {
+        "columns": "[{\"name\":\"Signing_Par1\",\"label\":\"签字会计师1\"},{\"name\":\"Signing_Par2\",\"label\":\"签字会计师2\"}]"
+      },
+      "fields": [
+        {
+          "name": "Company_Broker2Abbr",
+          "label": "券商交易单元2-简称",
+          "description": "",
+          "group": "company_data",
+          "type": "Text",
+          "required": false,
+          "readonly": false,
+          "settings": {
+            "sdc": "B11",
+            "order": "6"
+          }
+        },
+        {
+          "name": "Company_REPOTABLE",
+          "label": "是否要加债券及债券回购的表格",
+          "description": "参见是否同时有7.4.10.1.4以及7.4.10.1.5，若有是Y",
+          "group": "company_data",
+          "type": "Boolean",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "order": "17",
+            "sdc": "B37"
+          }
+        },
+        {
+          "name": "Company_Net_Worth",
+          "label": "净值表-指数收益法",
+          "description": "",
+          "group": "company_document",
+          "type": "Document",
+          "required": false,
+          "readonly": false,
+          "settings": {
+            "order": "142",
+            "can_download": true
+          }
+        },
+        {
+          "name": "Valuation_Summary",
+          "label": "估值汇总表",
+          "description": "",
+          "group": "company_document",
+          "type": "Document",
+          "required": false,
+          "readonly": true,
+          "settings": {
+            "order": "140",
+            "can_download": true,
+            "can_view": true
+          }
+        },
+        {
+          "name": "Company_SwitchValuationDate",
+          "label": "切换非公开发行股票估值的日期",
+          "description": "切换非公开发行股票估值的日期",
+          "group": "company_data",
+          "type": "Date",
+          "required": false,
+          "readonly": false,
+          "settings": {
+            "type": "'YYYY-MM-DD'",
+            "sdc": "B84",
+            "order": "22"
+          }
+        },
+        {
+          "name": "Company_Broker1",
+          "label": "券商交易单元1-全称",
+          "description": "参见7.4.9关联方关系中的全称及简称，列出关联方中的证券公司",
+          "group": "company_data",
+          "type": "Text",
+          "required": false,
+          "readonly": false,
+          "settings": {
+            "sdc": "B8",
+            "order": "3"
+          }
+        },
+        {
+          "name": "Company_ReportDate",
+          "label": "报告日",
+          "description": "",
+          "group": "company_data",
+          "type": "Date",
+          "required": false,
+          "readonly": false,
+          "settings": {
+            "order": "0",
+            "type": "'YYYY-MM-DD'",
+            "sdc": "B20"
+          }
+        },
+        {
+          "name": "Signing_Par2",
+          "label": "签字会计师2",
+          "description": "",
+          "group": "company_data",
+          "type": "Select",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "options": "[   {     \"value\": 1,     \"label\": \"朱 宏 宇\"   },   {     \"value\": 2,     \"label\": \"陈    熹\"   },   {     \"value\": 3,     \"label\": \"沈 兆 杰\"   },   {     \"value\": 4,     \"label\": \"魏 佳 亮\"   },   {     \"value\": 5,     \"label\": \"俞 伟 敏\"   },   {     \"value\": 6,     \"label\": \"赵    钰\"   },   {     \"value\": 7,     \"label\": \"周    祎\"   },   {     \"value\": 8,     \"label\": \"赵    钰\"   },   {     \"value\": 9,     \"label\": \"边 晓 红\"   },   {     \"value\": 10,     \"label\": \"李    一\"   },   {     \"value\": 11,     \"label\": \"徐    静\"   },   {     \"value\": 12,     \"label\": \"曹    阳\"   },   {     \"value\": 13,     \"label\": \"林 佳 璐\"   },   {     \"value\": 14,     \"label\": \"陈 逦 迤\"   },   {     \"value\": 15,     \"label\": \"都 晓 燕\"   },   {     \"value\": 16,     \"label\": \"陈 薇 瑶\"   },   {     \"value\": 17,     \"label\": \"陈    腾\"   },   {     \"value\": 18,     \"label\": \"陈 轶 杰\"   },   {     \"value\": 19,     \"label\": \"顾 卓 毅\"   },   {     \"value\": 20,     \"label\": \"金 诗 涛\"   },   {     \"value\": 21,     \"label\": \"罗    佳\"   },   {     \"value\": 22,     \"label\": \"赵    雪\"   },   {     \"value\": 23,     \"label\": \"庞 伊 君\"   },   {     \"value\": 24,     \"label\": \"李 旭 芳\"   },   {     \"value\": 25,     \"label\": \"蔡 晓 慧\"   } ]",
+            "order": "25",
+            "sdc": "B87",
+            "show_in_list": true
+          }
+        },
+        {
+          "name": "Company_PeriodDisplayType",
+          "label": "利润表使用年度还是日期",
+          "description": "根据意见页第一页第一段填写基金全称及简称",
+          "group": "company_data",
+          "type": "Select",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "sdc": "B1",
+            "options": "[{\"value\":1,\"label\":\"年度\"},{\"value\":2,\"label\":\"XXXX年XX月XX日至XXXX年XX月XX日\"}]",
+            "order": "12"
+          }
+        },
+        {
+          "name": "Year_Company_TransacationSeat",
+          "label": "多基金席位表",
+          "description": "",
+          "group": "company_document",
+          "type": "Document",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "order": "121",
+            "can_download": "1",
+            "can_edit": "1"
+          }
+        },
+        {
+          "name": "Company_Markup_Compare_NMMF",
+          "label": "标签关联表(非货币对比)",
+          "description": "",
+          "group": "company_document",
+          "type": "Document",
+          "required": false,
+          "readonly": false,
+          "settings": {
+            "can_download": true,
+            "order": "116"
+          }
+        },
+        {
+          "name": "Company_OPERATIONIC",
+          "label": "会计机构负责人",
+          "description": "参见所有者权益变动表下名单",
+          "group": "company_data",
+          "type": "Text",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "order": "11",
+            "sdc": "B23"
+          }
+        },
+        {
+          "name": "Company_FMCAbbr",
+          "label": "基金管理人-简称",
+          "description": "",
+          "group": "company_data",
+          "type": "Text",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "order": "2",
+            "sdc": "B5"
+          }
+        },
+        {
+          "name": "Company_Broker1Abbr",
+          "label": "券商交易单元1-简称",
+          "description": "",
+          "group": "company_data",
+          "type": "Text",
+          "required": false,
+          "readonly": false,
+          "settings": {
+            "sdc": "B9",
+            "order": "4"
+          }
+        },
+        {
+          "name": "Company_Broker2",
+          "label": "券商交易单元2-全称",
+          "description": "参见7.4.9关联方关系中的全称及简称，列出关联方中的证券公司",
+          "group": "company_data",
+          "type": "Text",
+          "required": false,
+          "readonly": false,
+          "settings": {
+            "sdc": "B10",
+            "order": "5"
+          }
+        },
+        {
+          "name": "Company_InterstSensitiveAnalysis",
+          "label": "是否披露利率敏感性分析",
+          "description": "",
+          "group": "company_data",
+          "type": "Boolean",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "order": "18",
+            "sdc": "B68"
+          }
+        },
+        {
+          "name": "Year_Company_Excel_NMMF",
+          "label": "底稿模版(非货币)",
+          "description": "",
+          "group": "company_document",
+          "type": "Document",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "can_edit": "1",
+            "can_download": "0",
+            "subject": "document",
+            "order": "101",
+            "editor": "2"
+          }
+        },
+        {
+          "name": "Company_Broker3",
+          "label": "券商交易单元3-全称",
+          "description": "参见7.4.9关联方关系中的全称及简称，列出关联方中的证券公司",
+          "group": "company_data",
+          "type": "Text",
+          "required": false,
+          "readonly": false,
+          "settings": {
+            "sdc": "B12",
+            "order": "7"
+          }
+        },
+        {
+          "name": "Company_Broker3Abbr",
+          "label": "券商交易单元3-简称",
+          "description": "",
+          "group": "company_data",
+          "type": "Text",
+          "required": false,
+          "readonly": false,
+          "settings": {
+            "sdc": "B13",
+            "order": "8"
+          }
+        },
+        {
+          "name": "Year_Company_Word_NewNMMF",
+          "label": "报告模版(新非货币)",
+          "description": "",
+          "group": "company_document",
+          "type": "Document",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "can_edit": "1",
+            "can_download": "1",
+            "order": "102",
+            "subject": "document",
+            "editor": "2"
+          }
+        },
+        {
+          "name": "Company_DisclosureDisplayType",
+          "label": "披露方式",
+          "description": "附注披露是按照一句话还是无余额/无",
+          "group": "company_data",
+          "type": "Select",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "order": "13",
+            "options": "[{\"value\":1,\"label\":\"整句话披露\"},{\"value\":2,\"label\":\"无余额/无\"}]",
+            "sdc": "B17"
+          }
+        },
+        {
+          "name": "Year_Company_Markup_NMMF",
+          "label": "标签关联表(非货币)",
+          "description": "",
+          "group": "company_document",
+          "type": "Document",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "editor": "2",
+            "can_view": true,
+            "can_download": true,
+            "order": "104"
+          }
+        },
+        {
+          "name": "Company_ExchangeBondValMethod",
+          "label": "交易所债券估值方法",
+          "description": "如没有交易所债券估值方法则不填写",
+          "group": "company_data",
+          "type": "Select",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "order": "19",
+            "options": "[{\"value\":1,\"label\":\"中证指数有限公司\"},{\"value\":2,\"label\":\"中央国债登记结算有限责任公司\"}]",
+            "sdc": "B66"
+          }
+        },
+        {
+          "name": "Company_FMCFullname",
+          "label": "基金管理人-全称",
+          "description": "参见7.4.9关联方关系中的全称及简称，如果没有简称则空",
+          "group": "company_data",
+          "type": "Text",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "order": "1",
+            "sdc": "B4"
+          }
+        },
+        {
+          "name": "Company_FS_Inspoce",
+          "label": "FS-Inspoce",
+          "description": "",
+          "group": "company_document",
+          "type": "Document",
+          "required": false,
+          "readonly": false,
+          "settings": {
+            "order": "143",
+            "can_download": true
+          }
+        },
+        {
+          "name": "document_test",
+          "label": "文件测试2",
+          "description": "",
+          "group": "company_document",
+          "type": "Document",
+          "required": false,
+          "readonly": false,
+          "settings": {
+            "can_download": true,
+            "can_view": true
+          }
+        },
+        {
+          "name": "Company_Exponential",
+          "label": "指数收益法",
+          "description": "",
+          "group": "company_document",
+          "type": "Document",
+          "required": false,
+          "readonly": false,
+          "settings": {
+            "order": "144",
+            "can_download": true
+          }
+        },
+        {
+          "name": "Year_Company_Word_MMF",
+          "label": "报告模版(老货币)",
+          "description": "",
+          "group": "company_document",
+          "type": "Document",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "editor": "2",
+            "subject": "document",
+            "order": "113",
+            "can_download": "1",
+            "can_edit": "0"
+          }
+        },
+        {
+          "name": "Company_ACCOUTINGIC",
+          "label": "主管会计工作负责人",
+          "description": "参见所有者权益变动表下名单",
+          "group": "company_data",
+          "type": "Text",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "order": "10",
+            "sdc": "B22"
+          }
+        },
+        {
+          "name": "Year_Company_Excel_MMF",
+          "label": "底稿模版(货币)",
+          "description": "",
+          "group": "company_document",
+          "type": "Document",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "editor": "2",
+            "can_download": "1",
+            "can_edit": "1",
+            "subject": "document",
+            "order": "111"
+          }
+        },
+        {
+          "name": "Company_RiskRating",
+          "label": "是否披露信用评级",
+          "description": "参见7.4.13.2 信用风险",
+          "group": "company_data",
+          "type": "Boolean",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "order": "16",
+            "sdc": "B78"
+          }
+        },
+        {
+          "name": "Company_PreciousMedalDisclosure",
+          "label": "是否需要贵金属投资披露",
+          "description": "",
+          "group": "company_data",
+          "type": "Boolean",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "order": "15",
+            "sdc": "B76"
+          }
+        },
+        {
+          "name": "Company_Markup_Compare_MMF",
+          "label": "标签关联表(货币对比)",
+          "description": "",
+          "group": "company_document",
+          "type": "Document",
+          "required": false,
+          "readonly": false,
+          "settings": {
+            "can_download": true,
+            "order": "117"
+          }
+        },
+        {
+          "name": "Year_Company_Markup_MMF",
+          "label": "标签关联表(货币)",
+          "description": "",
+          "group": "company_document",
+          "type": "Document",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "editor": "2",
+            "order": "114",
+            "subject": "document",
+            "can_download": "1",
+            "can_edit": "1"
+          }
+        },
+        {
+          "name": "Company_ValuationCompany",
+          "label": "非公开发行股票估值使用的供应商",
+          "description": "非公开发行股票估值使用的供应商",
+          "group": "company_data",
+          "type": "Select",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "options": "[{\"value\":1,\"label\":\"中央国债登记结算有限责任公司\"},{\"value\":2,\"label\":\"中证指数有限公司\"}]",
+            "sdc": "B85",
+            "order": "23"
+          }
+        },
+        {
+          "name": "Company_InterBankBondVal",
+          "label": "银行间债券估值方法",
+          "description": "",
+          "group": "company_data",
+          "type": "Select",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "options": "[{\"value\":1,\"label\":\"中央国债登记结算有限责任公司\"},{\"value\":2,\"label\":\"中证指数有限公司\"}]",
+            "order": "20",
+            "sdc": "B88"
+          }
+        },
+        {
+          "name": "Company_ABSII",
+          "label": "是否需要披露资产支持证券投资收益",
+          "description": "",
+          "group": "company_data",
+          "type": "Boolean",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "sdc": "B79",
+            "order": "14"
+          }
+        },
+        {
+          "name": "Year_Company_Word_NMMF",
+          "label": "报告模版(老非货币)",
+          "description": "",
+          "group": "company_document",
+          "type": "Document",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "editor": "2",
+            "subject": "document",
+            "order": "103",
+            "can_download": "1",
+            "can_edit": "0"
+          }
+        },
+        {
+          "name": "Document_Test",
+          "label": "文件测试",
+          "description": "文件测试",
+          "group": "company_document",
+          "type": "Document",
+          "required": false,
+          "readonly": false,
+          "settings": {
+            "can_edit": "1",
+            "can_download": "1"
+          }
+        },
+        {
+          "name": "Company_RPINTEREST",
+          "label": "关联方利息收入计提方法",
+          "description": "参见7.4.10.5 由关联方保管的银行存款余额及当期产生的利息收入项下附注内容",
+          "group": "company_data",
+          "type": "Select",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "sdc": "B40",
+            "options": "[{\"value\":1,\"label\":\"银行活期利率\"},{\"value\":2,\"label\":\"银行同业利率\"},{\"value\":3,\"label\":\" 约定利率\"}]",
+            "order": "21"
+          }
+        },
+        {
+          "name": "Signing_Par1",
+          "label": "签字会计师1",
+          "description": "",
+          "group": "company_data",
+          "type": "Select",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "options": "[   {     \"value\": 1,     \"label\": \"薛   竞\"   },   {     \"value\": 2,     \"label\": \"许康玮\"   },   {     \"value\": 3,     \"label\": \"单   峰\"   },   {     \"value\": 4,     \"label\": \"曹翠丽\"   }, {     \"value\": 5,     \"label\": \"张振波\"   } ]",
+            "order": "24",
+            "show_in_list": true,
+            "sdc": "B86"
+          }
+        },
+        {
+          "name": "Company_Compare_Template_NMMF",
+          "label": "底稿对比模板(非货币)",
+          "description": "",
+          "group": "company_document",
+          "type": "Document",
+          "required": false,
+          "readonly": false,
+          "settings": {
+            "order": "123"
+          }
+        },
+        {
+          "name": "Year_Company_Word_NewMMF",
+          "label": "报告模版(新货币)",
+          "description": "",
+          "group": "company_document",
+          "type": "Document",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "editor": "2",
+            "order": "112",
+            "subject": "document",
+            "can_download": "1",
+            "can_edit": "0"
+          }
+        },
+        {
+          "name": "Fund_Mapping",
+          "label": "基金对照表",
+          "description": "基金对照表",
+          "group": "company_document",
+          "type": "Document",
+          "required": false,
+          "readonly": false,
+          "settings": {
+            "editor": "2",
+            "order": "122",
+            "can_download": "1",
+            "can_edit": "1"
+          }
+        },
+        {
+          "name": "Company_IPO_Locking_Info",
+          "label": "新股锁定信息",
+          "description": "",
+          "group": "company_document",
+          "type": "Document",
+          "required": false,
+          "readonly": false,
+          "settings": {
+            "order": "141",
+            "can_download": true
+          }
+        },
+        {
+          "name": "Company_Compare_Template_MMF",
+          "label": "底稿对比模板(货币)",
+          "description": "",
+          "group": "company_document",
+          "type": "Document",
+          "required": false,
+          "readonly": false,
+          "settings": {
+            "order": "124"
+          }
+        },
+        {
+          "name": "Company_FMCIC",
+          "label": "基金管理人负责人",
+          "description": "参见所有者权益变动表下名单",
+          "group": "company_data",
+          "type": "Text",
+          "required": true,
+          "readonly": false,
+          "settings": {
+            "order": "9",
+            "sdc": "B21"
+          }
+        }
+      ]
+    },
+    "createdOn": "2018-01-11T14:19:24.0627187",
+    "updatedOn": "2018-02-22T12:21:44.3786914",
+    "createdBy": {
+      "userName": "admin",
+      "firstName": null,
+      "lastName": null,
+      "displayName": null,
+      "email": "admin@pwc.cn",
+      "roles": [],
+      "accesses": [],
+      "parent": null
+    },
+    "updatedBy": {
+      "userName": "admin",
+      "firstName": null,
+      "lastName": null,
+      "displayName": null,
+      "email": "admin@pwc.cn",
+      "roles": [],
+      "accesses": [],
+      "parent": null
+    },
+    "metadata": {
+      "Company_Broker2Abbr": null,
+      "Company_REPOTABLE": false,
+      "Company_Net_Worth": null,
+      "Valuation_Summary": null,
+      "Company_SwitchValuationDate": null,
+      "Company_Broker1": null,
+      "Company_ReportDate": null,
+      "Signing_Par2": "",
+      "Company_PeriodDisplayType": "",
+      "Year_Company_TransacationSeat": null,
+      "Company_Markup_Compare_NMMF": null,
+      "Company_OPERATIONIC": null,
+      "Company_FMCAbbr": null,
+      "Company_Broker1Abbr": null,
+      "Company_Broker2": null,
+      "Company_InterstSensitiveAnalysis": false,
+      "Year_Company_Excel_NMMF": {
+        "id": "cc0e1a71-4266-4182-a1e0-beecf00789c1",
+        "parentId": null,
+        "key": null,
+        "name": "底稿模版(非货币).xlsx",
+        "content": "C:\\Documents\\1f4f80be-adaf-4601-9644-b02a9b101b96",
+        "subject": {
+          "name": "document",
+          "label": "文档",
+          "description": "文档",
+          "singleton": false,
+          "type": "System",
+          "createdOn": "2018-01-11T14:19:02.6351196",
+          "updatedOn": "2018-01-24T20:34:57.4712527",
+          "createdBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "updatedBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "settings": {
+            "access_control": "public"
+          },
+          "fields": [
+            {
+              "name": "version",
+              "label": "版本",
+              "description": "文档版本",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_by",
+              "label": "锁定者",
+              "description": "",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_on",
+              "label": "锁定日期",
+              "description": "",
+              "group": null,
+              "type": "Date",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "editable",
+              "label": "可编辑",
+              "description": "",
+              "group": null,
+              "type": "Boolean",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            }
+          ]
+        },
+        "createdOn": "2018-01-25T11:23:10.1293327",
+        "updatedOn": "2018-01-26T21:21:13.9717481",
+        "createdBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "updatedBy": {
+          "userName": "system",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": null,
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "metadata": {
+          "version": "636524473901207757",
+          "locked_by": null,
+          "locked_on": null,
+          "editable": null
+        },
+        "parent": null,
+        "accesses": []
+      },
+      "Company_Broker3": null,
+      "Company_Broker3Abbr": null,
+      "Year_Company_Word_NewNMMF": {
+        "id": "8f7818de-4290-4b54-a51d-dd950479f8bd",
+        "parentId": null,
+        "key": null,
+        "name": "报告模版(新非货币).docx",
+        "content": "C:\\Documents\\3d614c20-895d-44cd-88ba-fb6fc2c777cf",
+        "subject": {
+          "name": "document",
+          "label": "文档",
+          "description": "文档",
+          "singleton": false,
+          "type": "System",
+          "createdOn": "2018-01-11T14:19:02.6351196",
+          "updatedOn": "2018-01-24T20:34:57.4712527",
+          "createdBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "updatedBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "settings": {
+            "access_control": "public"
+          },
+          "fields": [
+            {
+              "name": "version",
+              "label": "版本",
+              "description": "文档版本",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_by",
+              "label": "锁定者",
+              "description": "",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_on",
+              "label": "锁定日期",
+              "description": "",
+              "group": null,
+              "type": "Date",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "editable",
+              "label": "可编辑",
+              "description": "",
+              "group": null,
+              "type": "Boolean",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            }
+          ]
+        },
+        "createdOn": "2018-01-25T11:23:10.0607794",
+        "updatedOn": "2018-01-25T11:23:10.0607794",
+        "createdBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "updatedBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "metadata": {
+          "version": "636524473900426478",
+          "locked_by": null,
+          "locked_on": null,
+          "editable": null
+        },
+        "parent": null,
+        "accesses": []
+      },
+      "Company_DisclosureDisplayType": "",
+      "Year_Company_Markup_NMMF": {
+        "id": "23305f6f-fdbd-46d9-8990-266623f72864",
+        "parentId": null,
+        "key": null,
+        "name": "标签关联表(非货币).xlsx",
+        "content": "C:\\Documents\\75420330-8f40-4d9d-9bed-7d8859e47ed3",
+        "subject": {
+          "name": "document",
+          "label": "文档",
+          "description": "文档",
+          "singleton": false,
+          "type": "System",
+          "createdOn": "2018-01-11T14:19:02.6351196",
+          "updatedOn": "2018-01-24T20:34:57.4712527",
+          "createdBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "updatedBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "settings": {
+            "access_control": "public"
+          },
+          "fields": [
+            {
+              "name": "version",
+              "label": "版本",
+              "description": "文档版本",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_by",
+              "label": "锁定者",
+              "description": "",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_on",
+              "label": "锁定日期",
+              "description": "",
+              "group": null,
+              "type": "Date",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "editable",
+              "label": "可编辑",
+              "description": "",
+              "group": null,
+              "type": "Boolean",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            }
+          ]
+        },
+        "createdOn": "2018-01-25T11:23:10.1011444",
+        "updatedOn": "2018-01-25T11:23:10.1011444",
+        "createdBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "updatedBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "metadata": {
+          "version": "636524473900895267",
+          "locked_by": null,
+          "locked_on": null,
+          "editable": null
+        },
+        "parent": null,
+        "accesses": []
+      },
+      "Company_ExchangeBondValMethod": "",
+      "Company_FMCFullname": null,
+      "Company_FS_Inspoce": null,
+      "document_test": {
+        "id": "024b9aae-323a-4c0c-8044-045f2258434c",
+        "parentId": null,
+        "key": null,
+        "name": "mmftest底稿C.xlsx",
+        "content": "C:\\Documents\\2f78f30f-e8bd-47c8-aeef-8fd649c0b3f6",
+        "subject": {
+          "name": "document",
+          "label": "文档",
+          "description": "文档",
+          "singleton": false,
+          "type": "System",
+          "createdOn": "2018-01-11T14:19:02.6351196",
+          "updatedOn": "2018-01-24T20:34:57.4712527",
+          "createdBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "updatedBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "settings": {
+            "access_control": "public"
+          },
+          "fields": [
+            {
+              "name": "version",
+              "label": "版本",
+              "description": "文档版本",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_by",
+              "label": "锁定者",
+              "description": "",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_on",
+              "label": "锁定日期",
+              "description": "",
+              "group": null,
+              "type": "Date",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "editable",
+              "label": "可编辑",
+              "description": "",
+              "group": null,
+              "type": "Boolean",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            }
+          ]
+        },
+        "createdOn": "2018-02-01T16:01:53.5033734",
+        "updatedOn": "2018-02-01T16:01:53.5033734",
+        "createdBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "updatedBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "metadata": {
+          "version": "636530689134890087",
+          "locked_by": null,
+          "locked_on": null,
+          "editable": null
+        },
+        "parent": null,
+        "accesses": []
+      },
+      "Company_Exponential": null,
+      "Year_Company_Word_MMF": {
+        "id": "c47f51a9-4f04-4e44-8d21-f8e955bcfccf",
+        "parentId": null,
+        "key": null,
+        "name": "报告模版(老货币).docx",
+        "content": "C:\\Documents\\d8b50df3-e735-4036-b811-6b37e9436288",
+        "subject": {
+          "name": "document",
+          "label": "文档",
+          "description": "文档",
+          "singleton": false,
+          "type": "System",
+          "createdOn": "2018-01-11T14:19:02.6351196",
+          "updatedOn": "2018-01-24T20:34:57.4712527",
+          "createdBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "updatedBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "settings": {
+            "access_control": "public"
+          },
+          "fields": [
+            {
+              "name": "version",
+              "label": "版本",
+              "description": "文档版本",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_by",
+              "label": "锁定者",
+              "description": "",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_on",
+              "label": "锁定日期",
+              "description": "",
+              "group": null,
+              "type": "Date",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "editable",
+              "label": "可编辑",
+              "description": "",
+              "group": null,
+              "type": "Boolean",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            }
+          ]
+        },
+        "createdOn": "2018-01-25T11:23:10.0831111",
+        "updatedOn": "2018-01-25T11:23:10.0831111",
+        "createdBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "updatedBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "metadata": {
+          "version": "636524473900739022",
+          "locked_by": null,
+          "locked_on": null,
+          "editable": null
+        },
+        "parent": null,
+        "accesses": []
+      },
+      "Company_ACCOUTINGIC": null,
+      "Year_Company_Excel_MMF": {
+        "id": "9f39f526-f088-4360-8cd0-0245c9af19fc",
+        "parentId": null,
+        "key": null,
+        "name": "底稿模版(货币).xlsx",
+        "content": "C:\\Documents\\1f282946-bc38-49fe-8e62-6bf0b080f225",
+        "subject": {
+          "name": "document",
+          "label": "文档",
+          "description": "文档",
+          "singleton": false,
+          "type": "System",
+          "createdOn": "2018-01-11T14:19:02.6351196",
+          "updatedOn": "2018-01-24T20:34:57.4712527",
+          "createdBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "updatedBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "settings": {
+            "access_control": "public"
+          },
+          "fields": [
+            {
+              "name": "version",
+              "label": "版本",
+              "description": "文档版本",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_by",
+              "label": "锁定者",
+              "description": "",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_on",
+              "label": "锁定日期",
+              "description": "",
+              "group": null,
+              "type": "Date",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "editable",
+              "label": "可编辑",
+              "description": "",
+              "group": null,
+              "type": "Boolean",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            }
+          ]
+        },
+        "createdOn": "2018-01-25T11:23:10.1392525",
+        "updatedOn": "2018-01-25T11:23:10.1392525",
+        "createdBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "updatedBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "metadata": {
+          "version": "636524473901364097",
+          "locked_by": null,
+          "locked_on": null,
+          "editable": null
+        },
+        "parent": null,
+        "accesses": []
+      },
+      "Company_RiskRating": false,
+      "Company_PreciousMedalDisclosure": false,
+      "Company_Markup_Compare_MMF": null,
+      "Year_Company_Markup_MMF": {
+        "id": "eb2719a6-a5e0-4d67-9525-bd1c28d6703d",
+        "parentId": null,
+        "key": null,
+        "name": "标签关联表(货币).xlsx",
+        "content": "C:\\Documents\\542b253f-4e89-4651-b16f-9e7890faf338",
+        "subject": {
+          "name": "document",
+          "label": "文档",
+          "description": "文档",
+          "singleton": false,
+          "type": "System",
+          "createdOn": "2018-01-11T14:19:02.6351196",
+          "updatedOn": "2018-01-24T20:34:57.4712527",
+          "createdBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "updatedBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "settings": {
+            "access_control": "public"
+          },
+          "fields": [
+            {
+              "name": "version",
+              "label": "版本",
+              "description": "文档版本",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_by",
+              "label": "锁定者",
+              "description": "",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_on",
+              "label": "锁定日期",
+              "description": "",
+              "group": null,
+              "type": "Date",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "editable",
+              "label": "可编辑",
+              "description": "",
+              "group": null,
+              "type": "Boolean",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            }
+          ]
+        },
+        "createdOn": "2018-01-25T11:23:10.1103836",
+        "updatedOn": "2018-01-25T11:23:10.1103836",
+        "createdBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "updatedBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "metadata": {
+          "version": "636524473901051695",
+          "locked_by": null,
+          "locked_on": null,
+          "editable": null
+        },
+        "parent": null,
+        "accesses": []
+      },
+      "Company_ValuationCompany": "",
+      "Company_InterBankBondVal": "",
+      "Company_ABSII": false,
+      "Year_Company_Word_NMMF": {
+        "id": "171d9664-2ce2-4a11-bc00-263141389842",
+        "parentId": null,
+        "key": null,
+        "name": "报告模版(老非货币).docx",
+        "content": "C:\\Documents\\535ff4d9-3ba0-411e-b1c2-34c2527ea862",
+        "subject": {
+          "name": "document",
+          "label": "文档",
+          "description": "文档",
+          "singleton": false,
+          "type": "System",
+          "createdOn": "2018-01-11T14:19:02.6351196",
+          "updatedOn": "2018-01-24T20:34:57.4712527",
+          "createdBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "updatedBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "settings": {
+            "access_control": "public"
+          },
+          "fields": [
+            {
+              "name": "version",
+              "label": "版本",
+              "description": "文档版本",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_by",
+              "label": "锁定者",
+              "description": "",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_on",
+              "label": "锁定日期",
+              "description": "",
+              "group": null,
+              "type": "Date",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "editable",
+              "label": "可编辑",
+              "description": "",
+              "group": null,
+              "type": "Boolean",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            }
+          ]
+        },
+        "createdOn": "2018-01-25T11:23:10.0718079",
+        "updatedOn": "2018-01-25T11:23:10.0718079",
+        "createdBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "updatedBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "metadata": {
+          "version": "636524473900582688",
+          "locked_by": null,
+          "locked_on": null,
+          "editable": null
+        },
+        "parent": null,
+        "accesses": []
+      },
+      "Document_Test": {
+        "id": "55bf7366-fbd8-47ba-b4ef-e98f1ea301ba",
+        "parentId": null,
+        "key": null,
+        "name": "vue笔记.wps",
+        "content": "C:\\Documents\\7306f111-1225-43f3-a143-9546be46efb9",
+        "subject": {
+          "name": "document",
+          "label": "文档",
+          "description": "文档",
+          "singleton": false,
+          "type": "System",
+          "createdOn": "2018-01-11T14:19:02.6351196",
+          "updatedOn": "2018-01-24T20:34:57.4712527",
+          "createdBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "updatedBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "settings": {
+            "access_control": "public"
+          },
+          "fields": [
+            {
+              "name": "version",
+              "label": "版本",
+              "description": "文档版本",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_by",
+              "label": "锁定者",
+              "description": "",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_on",
+              "label": "锁定日期",
+              "description": "",
+              "group": null,
+              "type": "Date",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "editable",
+              "label": "可编辑",
+              "description": "",
+              "group": null,
+              "type": "Boolean",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            }
+          ]
+        },
+        "createdOn": "2018-02-01T17:07:59.3866091",
+        "updatedOn": "2018-02-01T17:07:59.3866091",
+        "createdBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "updatedBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "metadata": {
+          "version": "636530728793796714",
+          "locked_by": null,
+          "locked_on": null,
+          "editable": null
+        },
+        "parent": null,
+        "accesses": []
+      },
+      "Company_RPINTEREST": "",
+      "Signing_Par1": "",
+      "Company_Compare_Template_NMMF": null,
+      "Year_Company_Word_NewMMF": {
+        "id": "936315f5-f39e-4a6f-88f5-6feca35dfc2c",
+        "parentId": null,
+        "key": null,
+        "name": "报告模版(新货币).docx",
+        "content": "C:\\Documents\\2d6cd729-ced1-4a9d-845a-a55224ee977e",
+        "subject": {
+          "name": "document",
+          "label": "文档",
+          "description": "文档",
+          "singleton": false,
+          "type": "System",
+          "createdOn": "2018-01-11T14:19:02.6351196",
+          "updatedOn": "2018-01-24T20:34:57.4712527",
+          "createdBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "updatedBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "settings": {
+            "access_control": "public"
+          },
+          "fields": [
+            {
+              "name": "version",
+              "label": "版本",
+              "description": "文档版本",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_by",
+              "label": "锁定者",
+              "description": "",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_on",
+              "label": "锁定日期",
+              "description": "",
+              "group": null,
+              "type": "Date",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "editable",
+              "label": "可编辑",
+              "description": "",
+              "group": null,
+              "type": "Boolean",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            }
+          ]
+        },
+        "createdOn": "2018-01-25T11:23:10.0920706",
+        "updatedOn": "2018-01-25T11:23:10.0920706",
+        "createdBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "updatedBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "metadata": {
+          "version": "636524473900895267",
+          "locked_by": null,
+          "locked_on": null,
+          "editable": null
+        },
+        "parent": null,
+        "accesses": []
+      },
+      "Fund_Mapping": {
+        "id": "ddbfddca-ad4c-4be1-8158-1b051b40c4a5",
+        "parentId": null,
+        "key": null,
+        "name": "报告模版(老货币).docx",
+        "content": "C:\\Documents\\c27fb0d8-d0ee-4e34-ab36-efbab8748ce0",
+        "subject": {
+          "name": "document",
+          "label": "文档",
+          "description": "文档",
+          "singleton": false,
+          "type": "System",
+          "createdOn": "2018-01-11T14:19:02.6351196",
+          "updatedOn": "2018-01-24T20:34:57.4712527",
+          "createdBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "updatedBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "settings": {
+            "access_control": "public"
+          },
+          "fields": [
+            {
+              "name": "version",
+              "label": "版本",
+              "description": "文档版本",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_by",
+              "label": "锁定者",
+              "description": "",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_on",
+              "label": "锁定日期",
+              "description": "",
+              "group": null,
+              "type": "Date",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "editable",
+              "label": "可编辑",
+              "description": "",
+              "group": null,
+              "type": "Boolean",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            }
+          ]
+        },
+        "createdOn": "2018-01-19T20:59:58.3211852",
+        "updatedOn": "2018-01-19T21:01:41.7623785",
+        "createdBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "updatedBy": {
+          "userName": "system",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": null,
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "metadata": {
+          "version": "636519637017207727",
+          "locked_by": null,
+          "locked_on": null,
+          "editable": null
+        },
+        "parent": null,
+        "accesses": []
+      },
+      "Company_IPO_Locking_Info": null,
+      "Company_Compare_Template_MMF": {
+        "id": "34854e59-ff0a-4b99-a964-256a3ff16ac9",
+        "parentId": null,
+        "key": null,
+        "name": "compare MMF 0219.xlsx",
+        "content": "C:\\Documents\\2a60001d-2f26-46e9-9c55-35ecc4f3ce85",
+        "subject": {
+          "name": "document",
+          "label": "文档",
+          "description": "文档",
+          "singleton": false,
+          "type": "System",
+          "createdOn": "2018-01-11T14:19:02.6351196",
+          "updatedOn": "2018-01-24T20:34:57.4712527",
+          "createdBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "updatedBy": {
+            "userName": "admin",
+            "firstName": null,
+            "lastName": null,
+            "displayName": null,
+            "email": "admin@pwc.cn",
+            "roles": [],
+            "accesses": [],
+            "parent": null
+          },
+          "settings": {
+            "access_control": "public"
+          },
+          "fields": [
+            {
+              "name": "version",
+              "label": "版本",
+              "description": "文档版本",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_by",
+              "label": "锁定者",
+              "description": "",
+              "group": "meta_data",
+              "type": "Label",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "locked_on",
+              "label": "锁定日期",
+              "description": "",
+              "group": null,
+              "type": "Date",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            },
+            {
+              "name": "editable",
+              "label": "可编辑",
+              "description": "",
+              "group": null,
+              "type": "Boolean",
+              "required": false,
+              "readonly": true,
+              "settings": {}
+            }
+          ]
+        },
+        "createdOn": "2018-02-22T12:21:44.3273187",
+        "updatedOn": "2018-02-22T12:21:44.3273187",
+        "createdBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "updatedBy": {
+          "userName": "admin",
+          "firstName": null,
+          "lastName": null,
+          "displayName": null,
+          "email": "admin@pwc.cn",
+          "roles": [],
+          "accesses": [],
+          "parent": null
+        },
+        "metadata": {
+          "version": "636548701043197368",
+          "locked_by": null,
+          "locked_on": null,
+          "editable": null
+        },
+        "parent": null,
+        "accesses": []
+      },
+      "Company_FMCIC": null
+    },
+    "parent": null,
+    "accesses": [
+      {
+        "recordId": "8d4f0299-70c4-40cb-99f9-6e52a67c3c50",
+        "recordName": "中信建投基金管理有限公司",
+        "userName": "SDC",
+        "type": "Editable"
+      }
+    ]
+  }
+]

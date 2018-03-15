@@ -1,0 +1,82 @@
+{
+    "listData":[
+      {
+        "Batch_Id":"BBBB2017101300001",
+        "childList":[
+          {"Parcel_Id":"20171017160534998799",
+            "childList":[
+              {
+                "Order_Id":"555",
+                "childList":[
+                  {
+                    "Product_Id":"555",
+                    "PostCode":"20171017160534998799"
+                  },
+                  {
+                    "Product_Id":"555",
+                    "PostCode":"20171017160534998799"
+                  }
+
+                ]
+              },
+              {
+                "Order_Id":"555",
+                "childList":[
+                  {
+                    "Product_Id":"555",
+                    "PostCode":"20171017160534998799"
+                  },
+                  {
+                    "Product_Id":"555",
+                    "PostCode":"20171017160534998799"
+                  }
+
+                ]
+              }
+            ]
+          },
+          {"Parcel_Id":"20171017160534998799",
+        "childList":[
+          {
+            "Order_Id":"555",
+
+            "childList":[
+              {
+                "Product_Id":"555",
+                "PostCode":"20171017160534998799"
+              },
+              {
+                "Product_Id":"555",
+                "PostCode":"20171017160534998799"
+              }
+
+            ]
+          },
+          {
+            "Order_Id":"555",
+
+            "childList":[
+              {
+                "Product_Id":"555",
+                "PostCode":"20171017160534998799"
+              },
+              {
+                "Product_Id":"555",
+                "PostCode":"20171017160534998799"
+              }
+
+            ]
+          }
+        ]
+      }
+        ]
+      }
+    ],
+    "currentPage":1,
+    "pageSize":10,
+    "totalCount":1,
+    "totalPage":1,
+    "prePage":1,
+    "nextPage":1
+  }
+
