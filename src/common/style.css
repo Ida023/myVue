@@ -1,0 +1,913 @@
+
+@font-face {font-family: 'iconfontyyy';
+  src: url('font/iconfont.eot');
+  src: url('font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('font/iconfont.woff') format('woff'),
+  url('font/iconfont.ttf') format('truetype'),
+  url('font/iconfont.svg#iconfontyyy') format('svg');
+}
+
+.iconfontyyy{
+  font-family:"iconfontyyy" !important;
+  font-size:24px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+   cursor: pointer;
+
+}
+.el-icon-mainimg:before{
+  content:"主 图";
+  display: inline-block;
+  color: #fff;
+  position: absolute;
+  top:60%;
+  left:30%;
+
+}
+.icon-qiyongg:before { content: "\e618"; }
+
+.icon-tingyongg:before { content: "\e615"; }
+
+.icon-chakan:before { content: "\e600"; }
+
+
+/*
+ * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
+.iconfontyyy.icon_disabled{
+  cursor: default!important;
+}
+[v-cloak] {
+  display: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+}
+html{
+  height:100%;
+}
+
+a {
+  text-decoration: none;
+}
+.content{
+  margin-top:60px;
+
+}
+.sidebar{
+  height: 100%;
+}
+.main{
+  background: #ffffff;
+ /* min-width: 1200px;*/
+
+}
+.login-pass input,.login-email input{
+
+padding-left:45px !important;
+
+}
+#flex-warp{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+
+}
+#app{
+  height: 100%;
+}
+#center-warp{
+  flex: 1;
+}
+.el-table::before,.el-table::after{
+  height: 0!important;
+  width:0!important;
+}
+.marginBottom{
+  margin-bottom: 10px;
+}
+.select input.el-input__inner{
+  height:28px!important;
+}
+/*状态框*/
+.btn_group{
+  border:solid 1px rgb(129, 201, 249);
+  border-top:solid 20px rgb(129, 201, 249);
+  padding-left:20px;
+  line-height:50px;
+}
+/*注册登录进度*/
+.progress{
+  margin-top:52px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width:100%;
+}
+.progress div.reg-row {
+  width:68%;
+  margin:0 auto;
+}
+
+.pro-information {
+  border-radius: 4px;
+  min-height: 36px;
+  text-align:center;
+
+}
+.el-col>div.pro-information{
+  margin-right:0;
+}
+.pro-information img{
+  width:100%;
+}
+.pro-information{
+  margin-right:9px;
+}
+.reset-email .el-form-item__content{
+  line-height: 0!important;
+}
+@media screen and (max-width: 1080px) {
+  .progress div.reg-row{
+    width:100%;
+  }
+  .progress{
+    width:100%;
+  }
+}
+.el-form-item .marginLabel .el-form-item .el-form-item__content{
+  margin-left: 100px!important;
+}
+/*--------------权限管理整体布局 上 中 下-----------------*/
+#outermost_wrap{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-flex-direction:column;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  width:100%;
+  height:100%;
+}
+#outermost_wrap #sub_wrap{
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid #ccc;
+  padding-left: 20px;
+  font-size: 15px;
+}
+#outermost_wrap #content_wrap{
+  padding:20px;
+  flex:1;
+}
+#outermost_wrap #page{
+/*  position:fixed;*/
+  /*bottom:0px;*/
+}
+.active{
+  background-color: #20a0ff !important;
+  border-color: #20a0ff !important;
+  color: #fff !important;
+}
+#item_list{
+  border: solid 1px #eef1f6;
+  border-top:none;
+}
+.item_list{
+  border: solid 1px #eef1f6 !important;
+  border-top:none;
+}
+#item_listBorder{
+  border: solid 1px #eef1f6;
+  border-top:none;
+  border-left:none;
+}
+#item_listBorder2{
+  border: solid 1px #eef1f6;
+  border-top:none;
+  border-left:none;
+}
+.item_listBorder{
+  border: solid 1px #eef1f6;
+  border-top:none;
+  border-left:none;
+}
+
+/*横向菜单栏padding充满*/
+.el-menu-item a{
+  padding:20px;
+  border:0;
+}
+.el-menu .el-menu-item{
+  padding:0
+}
+/*页面上半部分搜索，操作按钮等样式-----------------*/
+.optionValue{
+  margin-right:10px;
+}
+.span_label{
+  font-weight:bold;
+  margin-right:10px;
+}
+.supplier_btn{
+  padding:10px 0;
+}
+.last_btn{
+  border-top:1px solid #d1dbe5 ;
+}
+.research_btn{
+  padding:9px 12px;
+}
+/*---------------覆盖原elelment样式：筛选折叠面板样式 写在全局才会生效---------------*/
+#filer .el-collapse .el-collapse-item .el-collapse-item__header{
+  padding-left:0;
+  text-align:right!important;
+  background:#20a0ff!important;
+  height:30px;
+  line-height:30px;
+}
+#filer .el-collapse{
+  margin-top:10px;
+}
+#filer .el-collapse-item__header .el-icon-arrow-right:before{
+  color: white;
+}
+#filer .el-collapse-item__header:before {
+  content: "筛选条件";
+  position: absolute;
+  left: 15px;
+  color: white;
+}
+#operation{
+  margin:10px 0;
+}
+/*---------------覆盖原elelment样式：筛选折叠面板样式 写在全局才会生效---------------*/
+.blank .el-collapse .el-collapse-item .el-collapse-item__header{
+  padding-left:0;
+  text-align:right!important;
+  background:#20a0ff!important;
+  height:30px;
+  line-height:30px;
+}
+.blank .el-collapse{
+  margin-top:10px;
+}
+.blank .el-collapse-item__header .el-icon-arrow-right:before{
+  color: white;
+}
+.blank .el-collapse-item__header:before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  color: white;
+}
+#operation{
+  margin:10px 0;
+}
+/*---------------覆盖原elelment样式：筛选折叠面板样式 写在全局才会生效---------------*/
+#filers .el-collapse .el-collapse-item .el-collapse-item__header{
+  padding-left:0;
+  text-align:right!important;
+  background:#20a0ff!important;
+  height:30px;
+  line-height:30px;
+}
+#filers .el-collapse{
+  margin-top:10px;
+}
+#filers .el-collapse-item__header .el-icon-arrow-right:before{
+  color: white;
+}
+#filers .el-collapse-item__header:before {
+  content: "状态";
+  position: absolute;
+  left: 15px;
+  color: white;
+}
+#operation{
+  margin:10px 0;
+}
+/*---------------覆盖原elelment样式：筛选折叠面板样式 写在全局才会生效---------------*/
+#filer2 .el-collapse .el-collapse-item .el-collapse-item__header{
+  padding-left:0;
+  text-align:right!important;
+  background:#20a0ff!important;
+  height:30px;
+  line-height:30px;
+}
+#filer2 .el-collapse{
+  margin-top:10px;
+}
+#filer2 .el-collapse-item__header .el-icon-arrow-right:before{
+  color: white;
+}
+#filer2 .el-collapse-item__header:before {
+  content: "供应商列表";
+  position: absolute;
+  left: 15px;
+  color: white;
+}
+#operation{
+  margin:10px 0;
+}
+/*弹窗标题出现下边框----------------------*/
+#borderBottomDialog .el-dialog__header{
+  padding-bottom:10px;
+  border-bottom:1px solid #d1dbe5!important; ;
+}
+/*  控制弹窗 内容高度，超过就出现滚动条*/
+.el-dialog .el-dialog__body{
+  max-height: 500px!important;
+  overflow: auto!important;
+}
+div .el-upload--picture-card {
+  border: none;
+  box-sizing: border-box;
+  width: 68px;
+  height: 36px;
+  line-height: 36px;
+  vertical-align: bottom;
+}
+/*/查看状态下图片可点击上传区域隐藏/*/
+.disabledImg > div.el-upload--picture-card {
+  display: none;
+}
+div .el-upload-dragger {
+  border:none;
+  width: inherit;
+  height: inherit;
+}
+/*popover弹框内容居中*/
+
+.my-popover{
+  text-align: center!important;
+}
+
+
+
+
+
+/*表格列超出宽内容就省略号显示*/
+/*.el-table .cell {
+  white-space: nowrap!important;
+}*/
+.el-collapse-item__header__arrow{
+  transform: rotate(-90deg);
+}
+/*查看文档时移除删除样式*/
+.uploadDocmentstyle .el-upload-list__item:hover{
+  background: #fff!important;
+}
+.uploadDocmentstyle .el-upload-list__item:hover .el-icon-close{
+  display: none;
+}
+.uploadDocmentstyle .el-upload--text{
+  display: none;
+}
+
+.publicCell.el-table .cell{
+  white-space: pre-wrap!important;
+
+}
+.publicCell .el-table--fit{
+  border-right: 1px solid #dfe6ec!important;
+}
+.downDoc{
+  cursor: pointer;
+}
+/*筛选*/
+.data_body{
+  border:1px solid #e4e4e4;
+}
+.data_body .el-select{/*下拉选框*/
+  width: 100%;
+}
+.data_body .row-text{/*行*/
+  border:1px solid #e4e4e4;
+  border-right:none;
+}
+.data_body .row-text .col-matching{/*条件比较方式*/
+  padding: 10px 20px;
+  border-right:1px solid #e4e4e4;
+}
+.data_body .col_input .el-cascader{/*级联*/
+  width: 100%!important;
+}
+
+/*----------------------文字按钮样式-------------------------------*/
+#font_btn{
+  color:#297dfa;
+  cursor:pointer;
+  padding:0 10px;
+}
+/*----------------批量导入样式-----------------------*/
+span.remark{
+  color: red;
+  font-size:12px;
+}
+span.modelDown{
+  position: absolute;
+  bottom: 20px;
+  color: #297dfa;
+  cursor:pointer;
+  left: 20px;
+}
+.importOptionVal{
+  margin-top: 20px;
+}
+.importOptionVal .el-radio+.el-radio {
+  margin-left: 0px;
+}
+
+/*单选按钮组样式更新------------------------------------*/
+.el-radio-button .el-radio-button__inner{
+  border: 1px solid #bfcbd9!important;
+  border-radius: 4px!important;
+  margin-right:10px!important;
+}
+.el-radio-button__orig-radio:checked+.el-radio-button__inner {
+  box-shadow: none!important;
+}
+.picHover .el-upload-list--picture-card .el-upload-list__item-actions{
+  display:none;
+}
+.preview .el-upload-list--picture-card .el-upload-list__item-actions .el-upload-list__item-delete{
+  display:none;
+}
+.supplierFiler .el-collapse-item__content{
+  display:flex!important;
+}
+#item_list input{
+  background: none;
+  border: none;
+}
+.salesCheckbox .el-checkbox-group  .el-checkbox:first-child{
+  margin-left:15px;
+}
+/*--------------筛选弹出框样式------------------------------------*/
+.row .col_input input{
+  padding: 10px 20px;
+  height:41px;
+  border:none;
+  border-right:1px solid #e4e4e4;
+}
+.row .col_input input:focus{
+  border:1px solid #3991ff;
+}
+.row .col_input .block:last-child(input){
+  border-left: 1px solid #e4e4e4;
+}
+.smallDia .el-dialog--small {
+  min-width: 636px;
+  overflow:auto;
+}
+.block .el-date-editor.el-input {
+  width: 100%;
+}
+.data_body{
+  border:1px solid #e4e4e4;
+}
+.data_body .row{
+  border:1px solid #e4e4e4;
+  border-right:none;
+}
+.row .col{
+  padding: 10px 20px;
+  border-right:1px solid #e4e4e4;
+}
+.col_input .el-select{
+  width:100%;
+}
+/*--------------------分类侧边栏超过设置的最大的宽度就出现滚动条-----------------------*/
+.cate_tree .el-tree .el-tree-node>.el-tree-node__children{
+  overflow: inherit!important;
+}
+/*--------------------统一弹窗的title居中显示-----------------------------*/
+.el-dialog__header{
+  text-align: center!important;
+}
+/*样品采购弹窗表格cell padding:0----------
+ Input输入框有边框，表格有边框   table_padding
+ 仅表格有边框          table_border
+---------------------*/
+.table_padding,.table_border{
+  border: solid 1px #eef1f6;
+  border-top:none;
+  border-left:none;
+}
+.table_padding .el-table__row td:nth-of-type(1) .cell,.table_padding .el-table__row td:nth-of-type(4) .cell,.table_padding .el-table__row td:nth-of-type(5) .cell{
+  padding:0!important;
+}
+.table_padding .el-table__row td:nth-of-type(1) .cell{
+  width:100%!important;
+}
+.table_padding .el-input input:focus,.table_padding .el-textarea textarea:focus{
+  border:1px solid #3991ff;
+}
+.table_padding table.el-table__body,.table_padding table.el-table__header{
+  width:100%!important;
+}
+.table_padding .el-table .el-tooltip.cell{
+  width:inherit!important;
+}
+.table_padding .el-table .cell span{
+  white-space: nowrap!important;
+}
+/**
+==================================================================
+  打印页面中横线样式      s
+ */
+.hr-i{
+  border-bottom: 1px solid #000;
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+}
+/*=============内容居中，左 右================*/
+.align-right{
+  text-align: right;
+}
+.align-center{
+  text-align: center;
+}
+.align-left{
+  text-align: left;
+}
+/*表格中的图片样式-------------*/
+.cell img {
+  padding-top:10px!important;
+  width:70px;
+  height:70px;
+}
+#infoData .el-form-item__label{
+  font-size:16px;
+  font-weight:bold;
+}
+/*tree树形控件中的按钮样式更新-------------------*/
+.tree_data button.item:focus{
+  outline-color: -webkit-focus-ring-color;
+  outline-style: none;
+  outline-width: 0;
+}
+.tree_data button.item:hover{
+  color: #3991ff;
+}
+.tree_data button.item{
+  background: none!important;
+  border: none!important;
+  cursor: pointer!important;
+}
+/*--------------富文本编辑器设置最小高度-----------------*/
+.ql-editor{
+  min-height: 300px;
+}
+
+/*调式右侧滚动条样式*/
+/*#app{
+  position:absolute;
+  top:0;
+  top:0;
+  bottom:0;
+  width:100%;
+}*/
+/*#home {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  width:100%;
+  overflow: hidden;
+}*/
+
+/*----------------------图片放大样式----------------------*/
+.ImgEnlarge #imgRight,.ImgEnlarge #imgLeft{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: #48576a;
+  position: absolute;
+  top:50%;
+  cursor: pointer;
+}
+
+.ImgEnlarge #imgRight{
+  left:-50px;
+  text-align: right;
+  background: url(../assets/ZB-001.png)no-repeat center center/cover;
+}
+.ImgEnlarge #imgLeft{
+  right:-50px;
+  text-align: left;
+  background: url(../assets/YB-001.png)no-repeat center center/cover;
+}
+
+/*侧边栏  */
+.sidebar-w li, .sidebar-n li {
+  padding: 0 !important;
+}
+
+.sidebar-n a, .sidebar-w a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar-w a {
+  padding-left: 40px;
+  color: #bfcbd9;
+}
+
+.sidebar-n a {
+  padding: 0 25px;
+  color: #324157;
+}
+
+.sidebar-w a:active, .sidebar-n a:active {
+  color: #bfcbd9;
+}
+ul.sidebar-n {
+  position: absolute;
+  top:56px;
+  left:60px;
+}
+/*移入显示ul*/
+.subnavitem .el-menu {
+  position: absolute;
+  left: 60px;
+  top: 0px;
+}
+
+
+
+/*侧边栏切换*/
+/*.el-menu .el-menu--dark {
+  flex: 0 0 230px;
+  width: 230px;
+}
+
+.el-menu .el-menu--dark .el-menu--collapse {
+  flex: 0 0 60px;
+  width: 60px;
+}*/
+.subnav{
+
+}
+.icon-鸡尾酒_cocktail25:before {
+  font-family:'icomoon';
+  content: "\e900";
+  color: #eef1f6;
+}
+
+/*
+.el-menu-hide > li {
+  height: 56px;
+  position: relative;
+}
+*/
+
+.el-menu-hide .subnavitem > ul {
+  display: none;
+  z-index: 999;
+  background: #bfcbd9;
+  height: auto;
+}
+.el-menu-hide .subnavitem > ul li {
+  height: 56px;
+  position: relative;
+}
+ul.el-menu-hide {
+  background: #324157;
+}
+
+.subnav-menu-item .el-menu-item.is-active a{
+  color: #20a0ff;
+}
+.subnav-menu-item .el-menu-item a{
+  color: #bfcbd9
+}
+/*右边   */
+.main-content {
+  flex:1;
+  overflow-y:auto;
+}
+.menu-expanded, .menu-collapsed {
+  height: 100%;
+}
+.menu-expanded ul, .menu-collapsed ul{
+  height: 100%;
+  overflow: auto;
+}
+.mainImg_style{
+  position: absolute !important;
+  right: -15px !important;
+  top: -6px !important;
+  width: 40px !important;
+  height: 24px !important;
+  background: red !important;
+  text-align: center !important;
+  -ms-transform: rotate(45deg) !important;
+  transform: rotate(45deg) !important;
+  box-shadow: 0 0 1pc 1px rgba(0,0,0,.2) !important;
+  display: block !important;
+
+}
+.primaryIcon{
+  font-size: 26px!important;
+  font-weight: bold;
+ // color:red;
+
+
+}
+
+.mainImg_style .el-icon-check{
+  transform: rotate(-45deg) scale(.8);
+}
+.InputDiv{
+  margin-right: 4px;
+}
+.tableInput{
+  /*background: #ffffff;*/
+  /*border: 2px solid #dfe6ec;*/
+}
+.textTop{
+  margin-top: 6px !important;
+}
+.padno table tr td .cell{
+  padding-right: 0;
+  padding-left: 0;
+}
+ .titlesize{
+  size: 21px !important;
+}
+.textStyle{
+  text-align: right;
+  margin-right: 50px;
+}
+.textColor{
+  color: red;
+}
+
+#SkuCounts .el-radio-button__inner{
+  border: 0 !important;
+  background-color: #fbfdff !important;
+}
+.Astyel{
+  color: #3991ff;
+  cursor: pointer;
+}
+ .Bstyel{
+  color: red;
+  cursor: pointer;
+}
+.Cstyel{
+  color:#8391a5;
+  cursor: pointer;
+}
+.el-table.tableHeight .el-table__body-wrapper .cell{
+   height: 270px!important;
+ }
+button.butactive{
+  background: #20a0ff!important;
+  color:#fff!important;  }
+/*树形控件去除默认边框*/
+.listLeft .tree-data .el-tree-node{
+  border-bottom: 1px solid #eef1f6;
+}
+.listLeft .tree-data.el-tree{
+  border:none;
+}
+
+
+.borderForm input{
+  border:1px solid #bfcbd9!important;
+}
+
+.text-R{
+  text-align: right !important;
+}
+.text-L{
+  text-align: left !important;
+}
+.text-C{
+  text-align: center !important;
+}
+.text-Lh{
+  line-height: 40px  !important;
+}
+/*穿梭框居中*/
+.transfeialign .el-transfer-panel__item{
+  text-align: left!important;
+}
+/*弹框头部下边框*/
+.headerBorder .el-dialog__header{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+/*打印页面宽度设置*/
+.pageWidth{
+  width:1000px!important;
+  margin:0 auto!important;
+}
+/*tabs取消下边框*/
+.tabsBorder .el-tabs__header{
+  border:0!important;
+}
+
+.el-select-dropdown{
+  z-index: 9999!important;
+}
+/*------------隐藏时间插件 header-----------*/
+show_time .el-date-picker__time-header{
+  display: block!important;
+}
+/*------------隐藏时间插件 header-----------*/
+.el-date-picker__time-header{
+  display: none!important;
+}
+/*------------放大图片样式-----------*/
+.picDetail{
+  width: 100%;
+  height: 100%;
+}
+/*------------强制换行-----------*/
+.word-break {
+  -ms-word-break: break-all;
+  word-break: break-all;
+}
+/*------------居中-----------*/
+.text-center{
+  text-align: center;
+}
+/******************权限管理tree样式**********************/
+/*
+.roleTree .el-tree-node>div .el-tree-node__children .el-tree-node  .el-tree-node__content{
+  padding-left: 75px!important;
+}
+.roleTree .el-tree-node__children .el-tree-node  .el-tree-node__content{
+  padding-left: 45px!important;
+}
+*/
+
+.payForm  .el-form-item__content{
+  margin-bottom: 10px!important;
+}
+
+.tabModel .el-tabs__nav>div:first-child .el-icon-close{
+  display: none!important;
+}
+
+#editItem, #addItem{
+  display: none;
+}
+
+.Amazonitem  .el-form-item .el-form-item__label{
+  text-align: left!important;
+}
+
+/*单选按钮不显示Label*/
+.none_label span.el-radio__label {
+  display: none!important;
+}
+/* 海关编码后台说 原型没有的去掉*/
+#dis-close .el-icon-close{
+  display: none !important;
+}
+/*-------------flex-------------------*/
+.flex{
+  display: flex;
+}
+.flex1{
+  flex: 1;
+}
+
+/*账号站点滚动条限制*/
+.radioOverflow{
+     max-height: 200px;
+   overflow: auto;
+}
+
+/*包裹订单合并表格样式*/
+.parcelData.el-table td>div.cell {
+  padding:0!important;
+}
+
+.cardBackground .el-card__header{
+  background: #20a0ff;
+  padding:6px 18px;
+}
+
+
+.updateDocment .el-upload-list__item:hover .el-icon-close{
+  display: none;
+}
